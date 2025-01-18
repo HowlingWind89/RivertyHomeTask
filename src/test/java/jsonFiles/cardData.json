@@ -1,0 +1,6 @@
+{
+  "owner": "string",
+  "number": "string",
+  "date": "string",
+  "cvv": "string"
+}
