@@ -7,7 +7,7 @@ WORKDIR /app
 # Coping project filres to container
 COPY . .
 
-# Executing gradle test execution
+# Executing gradle tests
 RUN gradle testSuite
 
 # Command by default

@@ -1,4 +1,5 @@
 package apiutils;
+
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
 
@@ -22,13 +23,13 @@ public class ResponseHandler {
                 .header("Accept", acceptHeader);
     }
 
-    public static Response getPostApiResponse (String acceptHeader, String payloadBody, String url, String responseBodyContent,
-                                               int statusCode) {
+    public static Response getPostApiResponse(String acceptHeader, String payloadBody, String url, String responseBodyContent,
+                                              int statusCode) {
         Response response = null;
-            response = prepareRequest(acceptHeader)
-                    .body(payloadBody)
-                    .when()
-                    .post(url);
+        response = prepareRequest(acceptHeader)
+                .body(payloadBody)
+                .when()
+                .post(url);
         return validateResponse(response, responseBodyContent, statusCode);
     }
 }
