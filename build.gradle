@@ -23,6 +23,7 @@ dependencies {
     implementation group: 'com.typesafe', name: 'config', version: '1.4.2'
     implementation group: 'commons-io', name: 'commons-io', version: '2.11.0'
     implementation group: 'io.rest-assured', name: 'rest-assured', version: '5.5.0'
+    implementation group: 'com.github.docker-java', name: 'docker-java', version: '3.4.1'
 
     testImplementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '5.1.1'
     testImplementation group: 'io.cucumber', name: 'cucumber-java', version: '7.3.4'
